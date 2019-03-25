@@ -1,1 +1,11 @@
+<!-- Updated 25th March 17:15pm, will document tonight --> 
 
+Thompsons Construction Links : 
+
+Shunting Yard Links : 
+
+Regular Expression Links : 
+
+NFA Links : 
+
+<!-- -->
