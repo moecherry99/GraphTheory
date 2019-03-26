@@ -8,4 +8,6 @@ Regular Expression Links :
 
 NFA Links : 
 
+Reg Expression to NFA : http://www.jflap.org/tutorial/regular/index.html (26th March 16:32pm) <- useful info!
+
 <!-- -->
