@@ -10,4 +10,6 @@ NFA Links :
 
 Reg Expression to NFA : http://www.jflap.org/tutorial/regular/index.html (26th March 16:32pm) <- useful info!
 
+NFA to Reg Expression : https://www.youtube.com/watch?v=OKFrju0HB7k (27th March 02:00am) <- good tutorial
+
 <!-- -->
