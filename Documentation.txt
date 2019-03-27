@@ -10,4 +10,6 @@ March 25th 17:13pm - Finished up on Thompsons Construction videos on Learnonline
 
 March 26th 00:32am - Drew diagram of NFA in project as reference.
 
+March 27th 11:54am - Created the start state and the NFA by watching video on Learnonline.
+
 
