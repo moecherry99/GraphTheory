@@ -2,7 +2,7 @@ Block 1 of Code:
 
 Created the class state, creating our initial state and its position/where we start. 
 edge1 and edge2 created to show where the state starts and where it moves to.
-Class nfa created and shows our initial state and our accept state for the automata.
+Class nfa created and shows our initial state and our accept state for the automaton.
 
 Block 2 of Code:
 
