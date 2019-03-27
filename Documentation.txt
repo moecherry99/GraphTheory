@@ -1,15 +1,8 @@
-<!-- Extracted from text file on home computer, did not upload to git until 25th March 17:12pm --> 
+Block 1 of Code:
 
-March 11th 14:22pm - Watched videos on Regular Expressions on Learnonline.
+Created the class state, creating our initial state and its position/where we start. 
+edge1 and edge2 created to show where the state starts and where it moves to.
+Class nfa created and shows our initial state and our accept state for the automata.
 
-March 12th 11:13am - Watched videos up on Learnonline to view all areas of Thompsons Construction. 
-
-March 16th 14:06pm- Began researching areas of how to start out project, also downloaded all necessary files to start project.
-
-March 25th 17:13pm - Finished up on Thompsons Construction videos on Learnonline and began watching Shunting Yard videos.
-
-March 26th 00:32am - Drew diagram of NFA in project as reference.
-
-March 27th 11:54am - Created the start state and the NFA by watching video on Learnonline.
-
+Block 2 of Code:
 
