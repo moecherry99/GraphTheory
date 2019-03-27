@@ -1,4 +1,22 @@
-<!-- Updated 25th March 17:15pm, will document tonight --> 
+<!-- Updated 27th March 23:00pm, will document tomorrow --> 
+
+<!-- Extracted from text file on home computer, did not upload to git until 25th March 17:12pm --> 
+
+March 11th 14:22pm - Watched videos on Regular Expressions on Learnonline.
+
+March 12th 11:13am - Watched videos up on Learnonline to view all areas of Thompsons Construction. 
+
+March 16th 14:06pm- Began researching areas of how to start out project, also downloaded all necessary files to start project.
+
+March 25th 17:13pm - Finished up on Thompsons Construction videos on Learnonline and began watching Shunting Yard videos.
+
+March 26th 00:32am - Drew diagram of NFA in project as reference.
+
+March 27th 11:54am - Created the start state and the NFA by watching video on Learnonline.
+
+----------------------------------------------------------------------------------------------------------
+
+-----------Links----------------
 
 Thompsons Construction Links : https://github.com/kennyledet/Algorithm-Implementations/blob/master/Thompsons_Construction_Algorithm/C%2B%2B/AlexMathew/RE_to_NFA.cpp (26th March 21:09pm)<- Github repository containing code snippets that may be useful 
 
