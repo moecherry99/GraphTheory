@@ -9,11 +9,11 @@ if datetime.datetime.today().weekday() == 1:
 else:
   print("Unfortunately it is not Tuesday.")
 
-
-
 # Thompsons Construction Tester
 # o = not accept, O = accept
 # ab.cd.|
+#
+#
 #            a     b
 #          o - > o - > o 
 #       e /             \ e
@@ -23,8 +23,10 @@ else:
 #            c     d
 #
 #
-#
 
+####################################
+        # Block 1 of Code
+####################################
 # This is where we start with our NFA
 class state:
   label = None
@@ -36,3 +38,6 @@ class nfa:
   initial = None # Our start state
   accept = None # Our accept state
 
+####################################
+        # Block 2 of Code
+####################################
