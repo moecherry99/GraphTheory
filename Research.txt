@@ -2,6 +2,9 @@
 
 Thompsons Construction Links : https://github.com/kennyledet/Algorithm-Implementations/blob/master/Thompsons_Construction_Algorithm/C%2B%2B/AlexMathew/RE_to_NFA.cpp (26th March 21:09pm)<- Github repository containing code snippets that may be useful 
 
+------------------
+Also a lot of code snippets taken from Learnonline video posted by Ian as guidelines on how to start project.
+------------------
 Shunting Yard Links : 
 
 Regular Expression Links : 
