@@ -1,6 +1,6 @@
 #Alex Cherry G00347106 
 #Graph Theory Non-Deterministic Finite Automata Project
-
+#Using Thompsons Construction Algorithm
 
 import datetime
 
@@ -24,3 +24,15 @@ else:
 #
 #
 #
+
+# This is where we start with our NFA
+class state:
+  label = None
+  edge1 = None
+  edge2 = None
+
+# Creating the NFA
+class nfa: 
+  initial = None # Our start state
+  accept = None # Our accept state
+
