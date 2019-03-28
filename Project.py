@@ -1,6 +1,6 @@
-#Alex Cherry G00347106 
-#Graph Theory Non-Deterministic Finite Automata Project
-#Using Thompsons Construction Algorithm
+# Alex Cherry G00347106 
+# Graph Theory Non-Deterministic Finite Automata Project
+# Using Thompsons Construction Algorithm
 
 import datetime
 
@@ -46,14 +46,14 @@ class nfa:
 ####################################
 
 # constructor
-def __init__(self, initial, accept)
+  def __init__(self, initial, accept):
 
-# initialize the variables
-  self.initial = initial
-  self.accept = accept
+  # initialize the variables
+    self.initial = initial
+    self.accept = accept
 
-# postfix notation 
-def compile(postfix)
+  # postfix notation 
+def compile(pofix):
   stack=[]
 
 ####################################
@@ -61,20 +61,22 @@ def compile(postfix)
 ####################################
 
   # for 
-  for c in postfix:
+  for char in pofix:
     # if char is one of the following in ifs
     if char == '.':
       # LIFO (stack)
-      nfa1 = stack.pop()
       nfa2 = stack.pop()
+      nfa1 = stack.pop()
       # 
-      new = nfa1.accept.edge1 = nfa2.initial
+      nfa1.accept.edge1 = nfa2.initial
+
+      new = nfa(nfa1.initial, nfa2.accept)
       stack.append(new)
 
     elif char == '|':
       # pop off stack
-      nfa1 = stack.pop()
       nfa2 = stack.pop()
+      nfa1 = stack.pop()
 
       # new initial state has been made
       initial = state()
@@ -87,7 +89,7 @@ def compile(postfix)
       nfa2.accept.edge1 = accept
 
       # push new nfa
-      new = nfa(nfa1.initial, nfa2.accept)
+      new = nfa(initial, accept)
       stack.append(new)
 
     elif char == '*':
@@ -103,27 +105,28 @@ def compile(postfix)
       initial.edge2 = accept
 
       # join new state with initial state
-      nfa1.accept.edge1 = nfa.initial 
-      nfa1.accept.edge2 = nfa.accept
+      nfa1.accept.edge1 = nfa1.initial 
+      nfa1.accept.edge2 = accept
 
       # push on to stack
-      new = nfa(nfa1.initial, nfa2.accept)
+      new = nfa(initial, accept)
       stack.append(new)
     # elif char =='+':
 
 
     else:
     # both will be the current state for now
-    accept = state()
-    initial = state()
-    initial.label = char
-    initial.edge1 = accept
-    # initial.edge2 = None 
+      accept = state()
+      initial = state()
+      initial.label = char
+      initial.edge1 = accept
+      # initial.edge2 = None 
 
-    # creating the nfa and it is the initial and accept
-    new = nfa(nfa1.initial, nfa2.accept)
-    stack.append(new)
+      # creating the nfa and it is the initial and accept
+      new = nfa(initial, accept)
+      stack.append(new)
 
+  # only 1 nfa per stack
+  return stack.pop()
 
-
-
+print(compile("ab.cd.|"))
