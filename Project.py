@@ -29,6 +29,9 @@ else:
 ####################################
 # This is where we start with our NFA
 class state:
+
+  # None is the E state, we don't need a character
+  # representation for these as it will move anyway.
   label = None
   edge1 = None
   edge2 = None
@@ -65,8 +68,8 @@ def compile(postfix)
       nfa1 = stack.pop()
       nfa2 = stack.pop()
       # 
-      nfa1.accept.edge1 = nfa2.initial
-      stack.append(nfa1.initial, nfa2.accept)
+      new = nfa1.accept.edge1 = nfa2.initial
+      stack.append(new)
 
     elif char == '|':
       # pop off stack
@@ -84,7 +87,8 @@ def compile(postfix)
       nfa2.accept.edge1 = accept
 
       # push new nfa
-      stack.append(nfa(initial, accept))
+      new = nfa(nfa1.initial, nfa2.accept)
+      stack.append(new)
 
     elif char == '*':
       # remove from stack
@@ -103,8 +107,8 @@ def compile(postfix)
       nfa1.accept.edge2 = nfa.accept
 
       # push on to stack
-      stack.append(nfa(initial, accept))
-
+      new = nfa(nfa1.initial, nfa2.accept)
+      stack.append(new)
     # elif char =='+':
 
 
@@ -117,7 +121,8 @@ def compile(postfix)
     # initial.edge2 = None 
 
     # creating the nfa and it is the initial and accept
-    stack.append(nfa(initial, accept))
+    new = nfa(nfa1.initial, nfa2.accept)
+    stack.append(new)
 
 
 
