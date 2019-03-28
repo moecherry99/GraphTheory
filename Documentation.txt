@@ -4,5 +4,11 @@ Created the class state, creating our initial state and its position/where we st
 edge1 and edge2 created to show where the state starts and where it moves to.
 Class nfa created and shows our initial state and our accept state for the automaton.
 
-Block 2 of Code:
+Block 2 of Code: 
+
+Created the constructor and also the for loop to deal with all of the extra characters/special characters.
+
+Block 3 of Code:
+
+For loop was edited. It now has ways of dealing with the stack. (28th March 23:09, this is not 100% complete.
 
