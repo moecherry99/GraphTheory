@@ -10,5 +10,5 @@ Created the constructor and also the for loop to deal with all of the extra char
 
 Block 3 of Code:
 
-For loop was edited. It now has ways of dealing with the stack. (28th March 23:09, this is not 100% complete.
+For loop was edited. It now has ways of dealing with the stack. 
 
