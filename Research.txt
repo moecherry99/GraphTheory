@@ -8,11 +8,15 @@ March 12th 11:13am - Watched videos up on Learnonline to view all areas of Thomp
 
 March 16th 14:06pm- Began researching areas of how to start out project, also downloaded all necessary files to start project.
 
-March 25th 17:13pm - Finished up on Thompsons Construction videos on Learnonline and began watching Shunting Yard videos.
+March 25th 17:13pm - Finished up on Thompsons Construction videos on Learnonline and began watching Shunting Yard on paper videos.
 
 March 26th 00:32am - Drew diagram of NFA in project as reference.
 
 March 27th 11:54am - Created the start state and the NFA by watching video on Learnonline.
+
+March 28th 22:00pm - Created NFA using Thompsons Construction.
+
+March 29th 18:37pm - Viewing Shunting Yard Algorithm coding video.
 
 ----------------------------------------------------------------------------------------------------------
 
