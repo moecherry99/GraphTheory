@@ -20,6 +20,8 @@ March 29th 18:37pm - Viewing Shunting Yard Algorithm coding video.
 
 March 30th 19:05pm - Created the Shunting Yard Algorithm in seperate project, in process of merging both. Will update to git soon.
 
+March 30th 23:33pm - Merged both algorithms together (Shunting/Thompsons) and watching the Regular Expression video on Learnonline.
+
 ----------------------------------------------------------------------------------------------------------
 
 -----------Links----------------
