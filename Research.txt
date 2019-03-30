@@ -18,6 +18,8 @@ March 28th 22:00pm - Created NFA using Thompsons Construction.
 
 March 29th 18:37pm - Viewing Shunting Yard Algorithm coding video.
 
+March 30th 19:05pm - Created the Shunting Yard Algorithm in seperate project, in process of merging both. Will update to git soon.
+
 ----------------------------------------------------------------------------------------------------------
 
 -----------Links----------------
