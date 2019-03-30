@@ -17,9 +17,7 @@
 #
 #
 
-####################################
-        # Block 5 of Code
-####################################
+
 
 ####################################
         # Block 4 of Code
@@ -54,7 +52,7 @@ def shunting(infix):
         
   return pofix
 
-print(shunting("(a.b)|(c*.d)"))
+print("Shunting Yard Conversion : " + shunting("(a.b)|(c*.d)"))
 
 ####################################
         # Block 1 of Code
@@ -164,3 +162,47 @@ def compile(pofix):
 
 print(compile("ab.cd.|"))
 
+####################################
+        # Block 5 of Code
+####################################
+
+def followes(state):
+  states = set()
+  set.add(state)
+
+  # check if state contains e arrows
+  if state.label is None:
+
+    states |= followes(state.edge1)
+
+    states |= followes(state.edge2)
+
+    # |= is Union.
+  return states
+
+def match(infix, string):
+
+  #compile reg expression
+  postfix = shunting(infix)
+  nfa = compile(postfix)
+
+  # current/next states
+  currentstate = set()
+  nextstate = set()
+
+  currentstate |= followes(nfa.initial)
+
+  for s in string:
+    for char in currentstate:
+      nextstate |= followes(char.edge1)
+
+      # current is now the next
+    currentstate = nextstate
+
+    # next is now empty
+    nextstate = set()
+
+  return(nfa.accept in currentstate)
+# test states
+# infixes = []
+# strings = []
