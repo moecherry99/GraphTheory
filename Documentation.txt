@@ -11,4 +11,9 @@ Created the constructor and also the for loop to deal with all of the extra char
 Block 3 of Code:
 
 For loop was edited. It now has ways of dealing with the stack. 
+We have our ., | and * operators updated and can be dealt with.
 
+Block 4 of Code: 
+
+Shunting Yard Algorithm. This was implemented after Thompsons Construction was created and therefore 
+block of code is inverted. When project is finished this will be fixed.
