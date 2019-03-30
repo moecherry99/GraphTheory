@@ -17,3 +17,10 @@ Block 4 of Code:
 
 Shunting Yard Algorithm. This was implemented after Thompsons Construction was created and therefore 
 block of code is inverted. When project is finished this will be fixed.
+This algorithm is a stack based algorithm. It deals with operand/operator precedence in our NFA.
+
+Block 5 of Code:
+
+Matching Regular Expressions by combining Shunting/Thompsons Algorithms. We have created states to deal
+with the E arrows/edges in the NFA, and have made next and current states to map out where we are in the
+NFA diagram after an E arrow has executed.
