@@ -2,13 +2,6 @@
 # Graph Theory Non-Deterministic Finite Automata Project
 # Using Thompsons Construction Algorithm
 
-import datetime
-
-if datetime.datetime.today().weekday() == 1:
-  print("Yay! It is Tuesday.")
-else:
-  print("Unfortunately it is not Tuesday.")
-
 # Thompsons Construction Tester
 # o = not accept, O = accept
 # ab.cd.|
@@ -25,9 +18,49 @@ else:
 #
 
 ####################################
+        # Block 5 of Code
+####################################
+
+####################################
+        # Block 4 of Code
+####################################
+
+# Shunting Yard Algorithm here
+
+def shunting(infix):
+
+  specials = {'*': 50, '.': 40, '|': 30}
+  # pofix is the output
+  pofix = ""
+
+  stack1 = ""
+
+  for c in infix:
+    if c == '(':
+      stack1 = stack1 + c
+    elif c == ')':
+      while stack1[-1] != '(':
+        pofix, stack1 = pofix + stack1[-1], stack1[:-1]
+      stack1 = stack1[:-1]
+    elif c in specials:
+      while stack1 and specials.get(c, 0) <= specials.get(stack1[-1], 0):
+        pofix, stack1 = pofix + stack1[-1], stack1[:-1]
+      stack1 = stack1 + c
+    else:
+      pofix = pofix + c
+
+  while stack1:
+    pofix, stack1 = pofix + stack1[-1], stack1[:-1]
+        
+  return pofix
+
+print(shunting("(a.b)|(c*.d)"))
+
+####################################
         # Block 1 of Code
 ####################################
 # This is where we start with our NFA
+
 class state:
 
   # None is the E state, we don't need a character
@@ -130,3 +163,4 @@ def compile(pofix):
   return stack.pop()
 
 print(compile("ab.cd.|"))
+
