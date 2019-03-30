@@ -29,7 +29,7 @@ Thompsons Construction Links : https://github.com/kennyledet/Algorithm-Implement
 ------------------
 Also a lot of code snippets taken from Learnonline video posted by Ian as guidelines on how to start project.
 ------------------
-Shunting Yard Links : 
+Shunting Yard Links : https://brilliant.org/wiki/shunting-yard-algorithm/
 
 Regular Expression Links : 
 
