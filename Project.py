@@ -27,31 +27,39 @@
 
 def shunting(infix):
 
+  # add in + symbol, * = 0 or more, + = 1 or more
   specials = {'*': 50, '.': 40, '|': 30}
   # pofix is the output
   pofix = ""
 
   stack1 = ""
 
+# this loops through the string through 1 character at a time until the end
   for c in infix:
+    # if ( push to stack
     if c == '(':
       stack1 = stack1 + c
+    # if ) pop from stack until (
     elif c == ')':
       while stack1[-1] != '(':
         pofix, stack1 = pofix + stack1[-1], stack1[:-1]
       stack1 = stack1[:-1]
+    # if operator/special character, get precedence from top into output
     elif c in specials:
       while stack1 and specials.get(c, 0) <= specials.get(stack1[-1], 0):
         pofix, stack1 = pofix + stack1[-1], stack1[:-1]
       stack1 = stack1 + c
+    # this is just a regular character, it does not change and therefore is 
+    # pushed to stack normally
     else:
       pofix = pofix + c
-
+  # pop all other operators to stack from output
   while stack1:
     pofix, stack1 = pofix + stack1[-1], stack1[:-1]
         
   return pofix
 
+print("String to convert to Shunting Yard : (a.b)|(c*.d)")
 print("Shunting Yard Conversion : " + shunting("(a.b)|(c*.d)"))
 
 ####################################
@@ -142,8 +150,13 @@ def compile(pofix):
       # push on to stack
       new = nfa(initial, accept)
       stack.append(new)
-    # elif char =='+':
 
+      # elif char =='+':
+      # nfa2 = stack.pop()
+      # initial = state()
+      # accept = state()
+      # initial.edge2 = nfa2.initial
+      # 
 
     else:
     # both will be the current state for now
