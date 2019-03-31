@@ -24,3 +24,8 @@ Block 5 of Code:
 Matching Regular Expressions by combining Shunting/Thompsons Algorithms. We have created states to deal
 with the E arrows/edges in the NFA, and have made next and current states to map out where we are in the
 NFA diagram after an E arrow has executed.
+
+Block 6 of Code: 
+
+These are our expressions that we use to test the program. They will execute and will show as True or False 
+through the "match" method.
