@@ -29,6 +29,9 @@ March 31st 15:38pm - All video code is now in project, currently researching the
 March 31st 17:57pm - Researched + operator, unsure how to fit into Algorithm for now. Also researched ? on the link in Regular
 Expressions link area below.
 
+March 31st 22:05pm - The README.txt was fully updated, explaining in detail how the program is run and what it does throughout to 
+get the final result. The + operator was difficult to implement, and therefore is commented out/some code removed to show attempt.
+
 ----------------------------------------------------------------------------------------------------------
 
 -----------Links----------------
@@ -42,7 +45,7 @@ Shunting Yard Links : https://brilliant.org/wiki/shunting-yard-algorithm/
 
 Regular Expression Links : http://web.mit.edu/gnu/doc/html/regex_3.html <- explains all operators in detail
 
-NFA Links : 
+NFA Links : https://www.tutorialspoint.com/automata_theory/non_deterministic_finite_automaton.htm
 
 Reg Expression to NFA : http://www.jflap.org/tutorial/regular/index.html (26th March 16:32pm) <- useful info!
 
