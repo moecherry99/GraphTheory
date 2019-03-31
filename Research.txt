@@ -26,7 +26,8 @@ March 31st 15:24pm - Fully watched Regular Expression video and have it coded. W
 
 March 31st 15:38pm - All video code is now in project, currently researching the "+" operator and how to implement into Algorithm.
 
-March 31st 17:57pm - Researched + operator, unsure how to fit into Algorithm for now.
+March 31st 17:57pm - Researched + operator, unsure how to fit into Algorithm for now. Also researched ? on the link in Regular
+Expressions link area below.
 
 ----------------------------------------------------------------------------------------------------------
 
