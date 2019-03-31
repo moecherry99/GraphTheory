@@ -15,7 +15,7 @@ and the characters in their required order of precedence (such as BOMDAS). This
 program uses the *, . or | operators. A demo version of the Shunting Yard 
 algorithms capabilities is shown at the start of the program to show you how it 
 changes these given strings. It then uses Thompsons Construction to show how these 
-symbols are dealt with on the Non-Deterministic Finate Automaton.
+symbols are dealt with on the Non-Deterministic Finite Automaton.
 
 A class called "nfa" is made with an initial and an accept state. What this 
 constructor does is create the nfa in memory and we will then take our string made 
