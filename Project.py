@@ -1,6 +1,6 @@
 # Alex Cherry G00347106 
 # Graph Theory Non-Deterministic Finite Automata Project
-# Using Thompsons Construction Algorithm
+# Using Thompsons Construction Algorithm + Shunting Yard Algorithm
 
 # Thompsons Construction Tester
 # o = not accept, O = accept
