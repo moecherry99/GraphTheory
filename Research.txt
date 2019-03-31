@@ -2,7 +2,8 @@
 
 <!-- Extracted from text file on home computer, did not upload to git until 25th March 17:12pm --> 
 
-March 11th 14:22pm - Watched videos on Regular Expressions on Learnonline.
+March 11th 14:22pm - Watched videos on hand written Thompsons Construction and all the python tutorial videos previous 
+to this date on Learnonline.
 
 March 12th 11:13am - Watched videos up on Learnonline to view all areas of Thompsons Construction. 
 
