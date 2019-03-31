@@ -168,14 +168,19 @@ print(compile("ab.cd.|"))
 
 def followes(state):
   states = set()
-  set.add(state)
+  states.add(state)
 
   # check if state contains e arrows
   if state.label is None:
 
-    states |= followes(state.edge1)
+    # these are our checkers to see if not null
+    if state.edge1 is not None:
 
-    states |= followes(state.edge2)
+      states |= followes(state.edge1)
+    
+    if state.edge2 is not None:
+
+      states |= followes(state.edge2)
 
     # |= is Union.
   return states
@@ -194,7 +199,8 @@ def match(infix, string):
 
   for s in string:
     for char in currentstate:
-      nextstate |= followes(char.edge1)
+      if char.label == s:
+        nextstate |= followes(char.edge1)
 
       # current is now the next
     currentstate = nextstate
@@ -203,6 +209,14 @@ def match(infix, string):
     nextstate = set()
 
   return(nfa.accept in currentstate)
+
+####################################
+        # Block 6 of Code
+####################################
 # test states
-# infixes = []
-# strings = []
+infixes = ["a.b.c*", "a.(b|d).c*", "(a.(b|d))*", "a.(b.b)*.c"]
+strings = ["", "abc", "abbc", "abcc", "abad", "abbbc"]
+
+for i in infixes:
+  for s in strings:
+    print(match(i, s), i, s)
