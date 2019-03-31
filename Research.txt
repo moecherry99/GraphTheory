@@ -26,6 +26,8 @@ March 31st 15:24pm - Fully watched Regular Expression video and have it coded. W
 
 March 31st 15:38pm - All video code is now in project, currently researching the "+" operator and how to implement into Algorithm.
 
+March 31st 17:57pm - Researched + operator, unsure how to fit into Algorithm for now.
+
 ----------------------------------------------------------------------------------------------------------
 
 -----------Links----------------
@@ -37,7 +39,7 @@ Also a lot of code snippets taken from Learnonline video posted by Ian as guidel
 ------------------
 Shunting Yard Links : https://brilliant.org/wiki/shunting-yard-algorithm/
 
-Regular Expression Links : 
+Regular Expression Links : http://web.mit.edu/gnu/doc/html/regex_3.html <- explains all operators in detail
 
 NFA Links : 
 
