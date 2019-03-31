@@ -24,6 +24,8 @@ March 30th 23:33pm - Merged both algorithms together (Shunting/Thompsons) and wa
 
 March 31st 15:24pm - Fully watched Regular Expression video and have it coded. Will add to Git soon.
 
+March 31st 15:38pm - All video code is now in project, currently researching the "+" operator and how to implement into Algorithm.
+
 ----------------------------------------------------------------------------------------------------------
 
 -----------Links----------------
